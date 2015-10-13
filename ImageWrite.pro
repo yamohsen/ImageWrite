@@ -10,6 +10,13 @@ CONFIG-=qt
 
 #Use C++ 11
 CONFIG+=c++11
+#DEFINES+=NDEBUG
 
 #Add Source Files
-SOURCES +=$$PWD/src/main.cpp
+SOURCES +=$$PWD/src/main.cpp \
+          $$PWD/src/ImageWrite.cpp
+
+#Add header files
+HEADERS +=$$PWD/include/ImageWrite.h
+
+INCLUDEPATH+=$$PWD/include
